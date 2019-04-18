@@ -11,8 +11,10 @@
 
   <body>
     <div class="wrapper mt-5">
-      <%= render partial: 'layouts/shared/navigation' %>
-      <%= yield %>
+      <div class="container">
+        <%= render partial: 'layouts/shared/navigation' %>
+        <%= yield %>
+      </div>
     </div>
   </body>
 </html>
