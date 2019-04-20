@@ -15,5 +15,8 @@ module Collabfield
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+
+    # Set loading of all helpers to all views to false.
+    config.action_controller.include_all_helpers = false
   end
 end
