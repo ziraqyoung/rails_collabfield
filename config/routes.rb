@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+
+  resources :posts do
+    collection do
+      get 'hobby'
+      get 'study'
+      get 'team'
+    end
+  end
+  
   # configure devise routing controller registrations to point to our custon controller registrations.
   devise_for :users, :controllers => { :registrations => :registrations }
   
