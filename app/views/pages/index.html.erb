@@ -1,16 +1,7 @@
 <%= render partial: 'posts/modal' %>
 <div class="container">
   <div class="row">
-
-    <div class="col-sm-3 d-none d-sm-block" id="side-menu">
-
-    </div><!-- ./side-menu -->
-
-    <div class="col-sm-9" id="main-content">
-      <div class="row">
-        <%= render @posts %>
-      </div>
-    </div><!-- ./main-content -->
-
+    <%= render partial: 'pages/index/side_menu' %>
+    <%= render partial: 'pages/index/main_content' %>
   </div><!-- ./row -->
 </div><!-- ./container -->
