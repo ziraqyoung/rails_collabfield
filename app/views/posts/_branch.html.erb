@@ -1,0 +1,20 @@
+<div id="branch-main-content" class="container">
+  
+  <div class="row">
+    <h1 class="page-title"><%= page_title%></h1>
+    <%= render partial: 'posts/branch/create_new_post', locals: { branch: branch }%>
+  </div><!--./row -->
+  <div class="row">
+    <%= render partial: 'posts/branch/categories'%>
+  </div><!--./row -->
+  <div class="row">
+    <div class="col-sm-12" id="feed">
+      <%= render @posts %>
+      <%= render no_posts_partial_path %>
+    </div>
+  </div><!--./row -->
+
+  <div class="infinite-scroll">
+    <%= will_paginate @posts %>
+  </div> <!--./infinite-scroll -->
+</div><!--./container -->
