@@ -27,7 +27,6 @@ RSpec.describe "branches", :type => :request do
   context "signed_in" do
     let(:user) { create(:user) }
     before(:each) { login_as user }
-
     it_behaves_like 'render_templates'
   end
 
